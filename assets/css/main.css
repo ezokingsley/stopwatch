@@ -36,14 +36,17 @@
   border-radius: 5px;
 }
 
+.stopwatch-btn i{
+  margin-left: 5px;
+}
 .stopwatch-btn-start{
-  border-color: #0fee07;
-  color: #0fee07;
+  border-color: #16b901;
+  color: #16b901;
   background-color: transparent;
 }
 
 .stopwatch-btn-start:hover{
-  background-color: #0fee07;
+  background-color: #16b901;
   color: #ddd;
 }
 
@@ -58,12 +61,12 @@
   color: #ddd;
 }
 .stopwatch-btn-reset{
-  border-color: #f7f303;
-  color: #f7f303;
+  border-color: #aeb11b;
+  color: #aeb11b;
   background-color: transparent;
 }
 
 .stopwatch-btn-reset:hover{
-  background-color: #f7f303;
+  background-color: #aeb11b;
   color: #ddd;
 }
