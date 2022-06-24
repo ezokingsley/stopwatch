@@ -22,6 +22,29 @@
           </div>
       </div>
     </div>
+
+    <!-- Timer begins Here -->
+
+    <div class="container">
+        <div class="timer-container">
+          <form action="/timer" class="timer-form">
+            <input type="number" name="minutes" id="minutes" class="timer-input" placeholder="00">
+            <input type="number" name="seconds" id="seconds" class="timer-input" placeholder="00">
+            <input type="number" name="millisec" id="millisec" class="timer-input" placeholder="00">
+          </form>
+        
+           <div class="timer-display-container">
+              <span class="timer-display" id="timer-display-minutes">00</span>  :
+              <span class="timer-display" id="timer-display-seconds">00</span>  :
+              <span class="timer-display" id="timer-display-millisec">00</span>
+            </div>
+            <div class="timer-btn-container">
+              <button class="timer-btn timer-btn-start">Start<i class="fa-solid fa-circle-play"></i></button>
+              <button class="timer-btn timer-btn-stop">Stop<i class="fa-solid fa-stop"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- end Timer -->
     <script src="assets/JS/app.js"></script>
 </body>
 </html>

@@ -1,9 +1,10 @@
 .container{
   display: flex;
   justify-content: center;
+  padding: 20px 0;
 }
 
-.stopwatch-container{
+.stopwatch-container,.timer-container{
   background-color: #ddd;
   padding: 20px;
   border-radius: 10px;
@@ -24,12 +25,13 @@
   margin-top: 5px;
   word-spacing: 5px;
 }
-.stopwatch-btn-container{
+.stopwatch-btn-container, .timer-btn-container{
   display: flex;
+  justify-content: center;
   gap: 20px;
 }
 
-.stopwatch-btn{
+.stopwatch-btn, .timer-btn{
   outline: none;
   border: 1px solid transparent;
   padding: 5px 20px;
@@ -39,24 +41,27 @@
 .stopwatch-btn i{
   margin-left: 5px;
 }
-.stopwatch-btn-start{
+.timer-btn i{
+  margin-left: 5px;
+}
+.stopwatch-btn-start, .timer-btn-start{
   border-color: #16b901;
   color: #16b901;
   background-color: transparent;
 }
 
-.stopwatch-btn-start:hover{
+.stopwatch-btn-start:hover, .timer-btn-start:hover{
   background-color: #16b901;
   color: #ddd;
 }
 
-.stopwatch-btn-stop{
+.stopwatch-btn-stop, .timer-btn-stop{
   border-color: #ee0707;
   color: #ee0707;
   background-color: transparent;
 }
 
-.stopwatch-btn-stop:hover{
+.stopwatch-btn-stop:hover, .timer-btn-stop:hover{
   background-color: #ee0707;
   color: #ddd;
 }
@@ -69,4 +74,25 @@
 .stopwatch-btn-reset:hover{
   background-color: #aeb11b;
   color: #ddd;
+}
+
+.timer-form{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.timer-input{
+  width: 40px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+}
+.timer-display-container{
+  margin: 20px 0;
+  font-size: 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-weight: bold;
 }
